@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8167268-1436-427A-8802-055825005288}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ArkasTextEditor</RootNamespace>
+    <AssemblyName>ArkasTextEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About_Form.designer.cs">
+      <DependentUpon>About_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Find_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Find_Form.Designer.cs">
+      <DependentUpon>Find_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoTo_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoTo_Form.designer.cs">
+      <DependentUpon>GoTo_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PreviewHTMLPage_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreviewHTMLPage_Form.designer.cs">
+      <DependentUpon>PreviewHTMLPage_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintRichTextBox.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Replace_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Replace_Form.designer.cs">
+      <DependentUpon>Replace_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Run_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Run_Form.designer.cs">
+      <DependentUpon>Run_Form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About_Form.resx">
+      <DependentUpon>About_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Find_Form.resx">
+      <DependentUpon>Find_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoTo_Form.resx">
+      <DependentUpon>GoTo_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreviewHTMLPage_Form.resx">
+      <DependentUpon>PreviewHTMLPage_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Replace_Form.resx">
+      <DependentUpon>Replace_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Run_Form.resx">
+      <DependentUpon>Run_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\browse.ico" />
+    <Content Include="Resources\browse.png" />
+    <None Include="Resources\prev1.png" />
+    <None Include="Resources\open1.png" />
+    <None Include="Resources\goto1.png" />
+    <None Include="Resources\find1.png" />
+    <None Include="Resources\new1.png" />
+    <None Include="Resources\browse1.png" />
+    <Content Include="Resources\copy.png" />
+    <Content Include="Resources\cut.png" />
+    <Content Include="Resources\exit.png" />
+    <None Include="Resources\help1.png" />
+    <None Include="Resources\font1.png" />
+    <None Include="Resources\redo1.png" />
+    <None Include="Resources\undo1.png" />
+    <None Include="Resources\exit1.png" />
+    <Content Include="Resources\find.png" />
+    <Content Include="Resources\font.png" />
+    <Content Include="Resources\goto.png" />
+    <Content Include="Resources\help.png" />
+    <Content Include="Resources\new.png" />
+    <Content Include="Resources\open.png" />
+    <Content Include="Resources\paste.png" />
+    <Content Include="Resources\prev.png" />
+    <Content Include="Resources\print.png" />
+    <Content Include="Resources\redo.png" />
+    <Content Include="Resources\save.png" />
+    <Content Include="Resources\saveas.png" />
+    <None Include="Resources\saveas1.png" />
+    <Content Include="Resources\undo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
